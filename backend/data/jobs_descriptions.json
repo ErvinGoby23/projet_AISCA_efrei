@@ -1,0 +1,50 @@
+{
+  "J01": {
+    "title": "Aide-soignant",
+    "description": "Accompagne les patients dans les gestes du quotidien, assure les soins d’hygiène et participe à la surveillance de l’état clinique."
+  },
+  "J02": {
+    "title": "Auxiliaire de puériculture",
+    "description": "Prend soin des nourrissons et jeunes enfants, participe aux soins d’hygiène et au développement affectif."
+  },
+  "J03": {
+    "title": "Assistant dentaire",
+    "description": "Assiste le chirurgien-dentiste, prépare le matériel, assure l’hygiène du cabinet."
+  },
+  "J04": {
+    "title": "Ambulancier",
+    "description": "Assure le transport et la prise en charge des patients dans des situations parfois urgentes."
+  },
+  "J05": {
+    "title": "Auxiliaire ambulancier",
+    "description": "Soutient l’ambulancier, aide au transport et à la sécurité des patients."
+  },
+  "J06": {
+    "title": "Éducateur santé",
+    "description": "Accompagne, sensibilise et forme le public aux bonnes pratiques de santé."
+  },
+  "J07": {
+    "title": "Conseiller en prévention santé",
+    "description": "Analyse les risques, propose des actions de prévention et sensibilise à la santé publique."
+  },
+  "J08": {
+    "title": "Accompagnant éducatif et social",
+    "description": "Aide les personnes fragiles, âgées ou handicapées à maintenir leur autonomie et leur bien-être."
+  },
+  "J09": {
+    "title": "Secrétaire médical",
+    "description": "Gère les dossiers patients, planifie les rendez-vous, assure l’accueil et le lien entre médecins et patients."
+  },
+  "J10": {
+    "title": "Agent de service hospitalier",
+    "description": "Assure la propreté, l’hygiène et la sécurité dans les services hospitaliers."
+  },
+  "J11": {
+    "title": "Agent de bio-nettoyage",
+    "description": "Réalise la désinfection approfondie des espaces hospitaliers dans le respect des normes strictes."
+  },
+  "J12": {
+    "title": "Agent de stérilisation",
+    "description": "Contrôle, nettoie et stérilise les instruments médicaux pour garantir la sécurité des soins."
+  }
+}

@@ -6,7 +6,7 @@ from sentence_transformers import SentenceTransformer, util
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR = os.path.join(BASE_DIR, "data")
+DATA_DIR = os.path.join(BASE_DIR,"..","data")
 
 # Charger compétences
 with open(os.path.join(DATA_DIR, "competencies.json"), "r", encoding="utf-8") as f:
@@ -17,7 +17,6 @@ with open(os.path.join(DATA_DIR, "jobs.json"), "r", encoding="utf-8") as f:
     jobs = json.load(f)
 
 
-# ----- ENCODE COMPETENCIES -----
 competency_embeddings = {
     c["id"]: model.encode(c["text"], convert_to_tensor=True)
     for c in competencies

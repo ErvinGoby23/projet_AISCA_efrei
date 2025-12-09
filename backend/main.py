@@ -2,6 +2,10 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import json, os
 
+# Importer le moteur SBERT (étapes 3 + 4)
+from sbert.analyzer import analyze_responses
+from sbert.recommender import recommend_jobs
+
 app = FastAPI()
 
 app.add_middleware(
@@ -15,8 +19,10 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 RESPONSES_PATH = os.path.join(BASE_DIR, "models", "responses.json")
 
 
+# -------------------------
+# LECTURE SÉCURISÉE JSON
+# -------------------------
 def load_responses():
-    """Charge les réponses en évitant les erreurs JSON."""
     if not os.path.exists(RESPONSES_PATH):
         return []
 
@@ -30,6 +36,9 @@ def load_responses():
         return []
 
 
+# -------------------------
+# ROUTE 1 : Sauvegarde
+# -------------------------
 @app.post("/save-responses/")
 def save_responses(data: dict):
 
@@ -44,8 +53,30 @@ def save_responses(data: dict):
 
     all_responses.append(entry)
 
-    # Sauvegarde
     with open(RESPONSES_PATH, "w", encoding="utf-8") as f:
         json.dump(all_responses, f, indent=4, ensure_ascii=False)
 
     return {"message": "saved", "id": new_id}
+
+
+# -------------------------
+# ROUTE 2 : Analyse SBERT
+# -------------------------
+@app.post("/analyze/")
+def analyze(data: dict):
+    """
+    data = réponses utilisateur envoyées par Streamlit
+    """
+
+    # convertir dict → liste de phrases
+    text_list = list(data.values())
+
+    # Appel du moteur SBERT (étapes 3 + 4)
+    result = analyze_responses(text_list)
+
+    return result
+
+@app.post("/recommend/")
+def recommend(data: dict):
+    text_list = list(data.values())
+    return recommend_jobs(text_list)
