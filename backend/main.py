@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import json, os
 
-# Importer le moteur SBERT (étapes 3 + 4)
+# Import SBERT engine
 from sbert.analyzer import analyze_responses
 from sbert.recommender import recommend_jobs
 
@@ -20,7 +20,7 @@ RESPONSES_PATH = os.path.join(BASE_DIR, "models", "responses.json")
 
 
 # -------------------------
-# LECTURE SÉCURISÉE JSON
+# LECTURE JSON SÉCURISÉE
 # -------------------------
 def load_responses():
     if not os.path.exists(RESPONSES_PATH):
@@ -37,13 +37,12 @@ def load_responses():
 
 
 # -------------------------
-# ROUTE 1 : Sauvegarde
+# ROUTE 1 : SAUVEGARDE DES RÉPONSES
 # -------------------------
 @app.post("/save-responses/")
 def save_responses(data: dict):
 
     all_responses = load_responses()
-
     new_id = len(all_responses) + 1
 
     entry = {
@@ -60,23 +59,61 @@ def save_responses(data: dict):
 
 
 # -------------------------
-# ROUTE 2 : Analyse SBERT
+# ROUTE 2 : ANALYSE SBERT BRUTE
 # -------------------------
 @app.post("/analyze/")
 def analyze(data: dict):
     """
-    data = réponses utilisateur envoyées par Streamlit
+    Analyse simple — SBERT seulement
     """
-
-    # convertir dict → liste de phrases
     text_list = list(data.values())
+    return analyze_responses(text_list)
 
-    # Appel du moteur SBERT (étapes 3 + 4)
-    result = analyze_responses(text_list)
 
-    return result
-
+# -------------------------
+# ROUTE 3 : RECOMMANDATION MÉTIERS
+# -------------------------
 @app.post("/recommend/")
 def recommend(data: dict):
     text_list = list(data.values())
     return recommend_jobs(text_list)
+
+
+# -------------------------
+# 🔥 ROUTE 4 : ANALYSE COMPLÈTE AISCA (ÉTAPE 7)
+# -------------------------
+@app.post("/api/analyze/")
+def analyze_full(data: dict):
+    """
+    Analyse complète AISCA :
+    - Scores des blocs
+    - Score global
+    - Top 3 métiers
+    - Plan de progression IA
+    - Résumé automatique (bio)
+    """
+
+    user_text_list = list(data.values())
+
+    result = analyze_responses(user_text_list)
+
+    block_scores = result["block_scores"]
+    global_score = result["global_score"]
+    top3 = result["top3_jobs"]
+    progression = result["progression_plan"]
+
+    # Résumé automatique
+    bio = (
+        f"L'utilisateur présente un score global de {round(global_score, 3)}. "
+        f"Scores par blocs : " +
+        ", ".join([f"{b}: {round(s,3)}" for b, s in block_scores.items()]) +
+        "."
+    )
+
+    return {
+        "block_scores": block_scores,
+        "global_score": global_score,
+        "top3": top3,
+        "progression": progression,
+        "bio": bio
+    }
