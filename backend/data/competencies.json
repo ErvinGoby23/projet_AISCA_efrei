@@ -1,0 +1,31 @@
+[
+  { "id": "C01", "block_id": 1, "block_name": "Gestes & Techniques de Soin", "text": "Aider un patient dans les soins d’hygiène et de confort" },
+  { "id": "C02", "block_id": 1, "block_name": "Gestes & Techniques de Soin", "text": "Mobiliser un patient en appliquant les règles de sécurité" },
+  { "id": "C03", "block_id": 1, "block_name": "Gestes & Techniques de Soin", "text": "Surveiller l’état général et les paramètres simples" },
+  { "id": "C04", "block_id": 1, "block_name": "Gestes & Techniques de Soin", "text": "Installer correctement un patient pour un soin ou un repos" },
+  { "id": "C05", "block_id": 1, "block_name": "Gestes & Techniques de Soin", "text": "Préparer et vérifier le matériel nécessaire aux soins" },
+
+  { "id": "C06", "block_id": 2, "block_name": "Relation, Communication & Soutien", "text": "Écouter activement une personne en difficulté" },
+  { "id": "C07", "block_id": 2, "block_name": "Relation, Communication & Soutien", "text": "Adapter sa communication au contexte et à la personne" },
+  { "id": "C08", "block_id": 2, "block_name": "Relation, Communication & Soutien", "text": "Apporter un soutien moral dans une situation stressante" },
+  { "id": "C09", "block_id": 2, "block_name": "Relation, Communication & Soutien", "text": "Créer un climat de confiance avec le patient" },
+  { "id": "C10", "block_id": 2, "block_name": "Relation, Communication & Soutien", "text": "Gérer une situation émotionnelle avec calme et respect" },
+
+  { "id": "C11", "block_id": 3, "block_name": "Organisation & Gestion des Soins", "text": "Tenir à jour les informations dans un dossier de soin" },
+  { "id": "C12", "block_id": 3, "block_name": "Organisation & Gestion des Soins", "text": "Organiser et planifier les activités quotidiennes" },
+  { "id": "C13", "block_id": 3, "block_name": "Organisation & Gestion des Soins", "text": "Transmettre des informations de manière claire et fiable" },
+  { "id": "C14", "block_id": 3, "block_name": "Organisation & Gestion des Soins", "text": "Accueillir et orienter les patients dans un service" },
+  { "id": "C15", "block_id": 3, "block_name": "Organisation & Gestion des Soins", "text": "Prioriser les tâches lors d’une journée chargée" },
+
+  { "id": "C16", "block_id": 4, "block_name": "Observation Clinique & Analyse", "text": "Observer et détecter un changement dans l’état d’un patient" },
+  { "id": "C17", "block_id": 4, "block_name": "Observation Clinique & Analyse", "text": "Repérer des signes de détresse physique ou émotionnelle" },
+  { "id": "C18", "block_id": 4, "block_name": "Observation Clinique & Analyse", "text": "Réagir rapidement face à une situation d’urgence" },
+  { "id": "C19", "block_id": 4, "block_name": "Observation Clinique & Analyse", "text": "Alerter en cas d’anomalie observée" },
+  { "id": "C20", "block_id": 4, "block_name": "Observation Clinique & Analyse", "text": "Évaluer une situation clinique pour adapter son action" },
+
+  { "id": "C21", "block_id": 5, "block_name": "Hygiène, Sécurité & Prévention", "text": "Appliquer les règles d’hygiène hospitalière" },
+  { "id": "C22", "block_id": 5, "block_name": "Hygiène, Sécurité & Prévention", "text": "Désinfecter du matériel selon les protocoles" },
+  { "id": "C23", "block_id": 5, "block_name": "Hygiène, Sécurité & Prévention", "text": "Maintenir un environnement propre et sécurisé" },
+  { "id": "C24", "block_id": 5, "block_name": "Hygiène, Sécurité & Prévention", "text": "Prévenir les risques infectieux dans un service" },
+  { "id": "C25", "block_id": 5, "block_name": "Hygiène, Sécurité & Prévention", "text": "Respecter les normes de sécurité sanitaire lors des soins" }
+]

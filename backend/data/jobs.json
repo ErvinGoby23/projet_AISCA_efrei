@@ -1,0 +1,62 @@
+[
+  {
+    "id": "J01",
+    "title": "Aide-soignant",
+    "competencies": ["C01", "C02", "C03", "C04", "C06", "C07", "C09", "C11", "C12", "C16", "C17", "C21", "C23"]
+  },
+  {
+    "id": "J02",
+    "title": "Auxiliaire de puériculture",
+    "competencies": ["C01", "C02", "C04", "C06", "C07", "C09", "C10", "C21", "C23"]
+  },
+  {
+    "id": "J03",
+    "title": "Assistant dentaire",
+    "competencies": ["C01", "C05", "C11", "C12", "C22"]
+  },
+  {
+    "id": "J04",
+    "title": "Ambulancier",
+    "competencies": ["C02", "C03", "C16", "C17", "C18", "C19", "C20", "C21"]
+  },
+  {
+    "id": "J05",
+    "title": "Auxiliaire ambulancier",
+    "competencies": ["C02", "C03", "C16", "C17", "C18"]
+  },
+  {
+    "id": "J06",
+    "title": "Éducateur santé",
+    "competencies": ["C06", "C07", "C08", "C09", "C10"]
+  },
+  {
+    "id": "J07",
+    "title": "Conseiller en prévention santé",
+    "competencies": ["C06", "C07", "C08", "C10", "C24"]
+  },
+  {
+    "id": "J08",
+    "title": "Accompagnant éducatif et social",
+    "competencies": ["C06", "C07", "C08", "C09"]
+  },
+  {
+    "id": "J09",
+    "title": "Secrétaire médical",
+    "competencies": ["C11", "C12", "C13", "C14", "C15"]
+  },
+  {
+    "id": "J10",
+    "title": "Agent de service hospitalier ",
+    "competencies": ["C21", "C22", "C23", "C24", "C25"]
+  },
+  {
+    "id": "J11",
+    "title": "Agent de bio-nettoyage",
+    "competencies": ["C22", "C23", "C24", "C25"]
+  },
+  {
+    "id": "J12",
+    "title": "Agent de stérilisation",
+    "competencies": ["C22", "C24", "C25"]
+  }
+]

@@ -25,5 +25,21 @@
             "q3_stress": "s",
             "q4_reaction": "s"
         }
+    },
+    {
+        "id": 4,
+        "answers": {
+            "q1_help": "fff",
+            "q2_motivation": "ff",
+            "q3_stress": "ff",
+            "q4_rigueur": "ff",
+            "q5_patient_state": "ff",
+            "q6_qualities": "ff",
+            "q7_difficulty": "ff",
+            "q10_rejection_text": "ff",
+            "q9_interest": [
+                "Organiser un service ou des dossiers"
+            ]
+        }
     }
 ]
