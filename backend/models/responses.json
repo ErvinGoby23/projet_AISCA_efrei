@@ -2,43 +2,16 @@
     {
         "id": 1,
         "answers": {
-            "q1_help": "ddd",
-            "q2_motivation": "dd",
-            "q3_stress": "dd",
-            "q4_reaction": "dd"
-        }
-    },
-    {
-        "id": 2,
-        "answers": {
-            "q1_help": "d",
-            "q2_motivation": "x",
-            "q3_stress": "s",
-            "q4_reaction": "q"
-        }
-    },
-    {
-        "id": 3,
-        "answers": {
-            "q1_help": "ss",
-            "q2_motivation": "s",
-            "q3_stress": "s",
-            "q4_reaction": "s"
-        }
-    },
-    {
-        "id": 4,
-        "answers": {
-            "q1_help": "fff",
-            "q2_motivation": "ff",
-            "q3_stress": "ff",
-            "q4_rigueur": "ff",
-            "q5_patient_state": "ff",
-            "q6_qualities": "ff",
-            "q7_difficulty": "ff",
-            "q10_rejection_text": "ff",
+            "q1_help": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée.",
+            "q2_motivation": "Le fait d’avoir un impact positif et d’apporter un réel soutien à quelqu’un.",
+            "q3_stress": "J’ai déjà dû réagir rapidement dans une situation d’urgence et garder mon sang-froid pour prendre les bonnes décisions.",
+            "q4_rigueur": "Lors d’une tâche importante, j’ai suivi chaque étape avec précision pour éviter toute erreur.",
+            "q5_patient_state": "Je reste calme, j’évalue la situation, je sécurise la personne et j’appelle les secours si nécessaire.",
+            "q6_qualities": "Empathie, sang-froid, écoute, rigueur, sens des responsabilités.",
+            "q7_difficulty": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q10_rejection_text": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
             "q9_interest": [
-                "Organiser un service ou des dossiers"
+                "Soutenir moralement et communiquer"
             ]
         }
     }
