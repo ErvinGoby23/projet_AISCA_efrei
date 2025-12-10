@@ -82,5 +82,53 @@
                 "Assister dans des soins"
             ]
         }
+    },
+    {
+        "id": 6,
+        "answers": {
+            "q1_help": "participer a des associations qui aide les ge",
+            "q2_motivation": "Le fait d’avoir un impact",
+            "q3_stress": "J’ai déjà dû réagir rap",
+            "q4_rigueur": "Lors d’une tâche importante, j’ai",
+            "q5_patient_state": "Je reste calme, j’évalue la situat",
+            "q6_qualities": "Empathie, sang-froid, écoute, rigu",
+            "q7_difficulty": "Gérer la détresse émotionnel",
+            "q10_rejection_text": "Les métiers trop ",
+            "q9_interest": [
+                "Organiser un service ou des dossiers"
+            ]
+        }
+    },
+    {
+        "id": 7,
+        "answers": {
+            "q1_help": "participer a des associations qui aide les ge",
+            "q2_motivation": "Le fait d’avoir un impact",
+            "q3_stress": "J’ai déjà dû réagir rap",
+            "q4_rigueur": "Lors d’une tâche importante, j’ai",
+            "q5_patient_state": "Je reste calme, j’évalue la situat",
+            "q6_qualities": "Empathie, sang-froid, écoute, rigu",
+            "q7_difficulty": "Gérer la détresse émotionnel",
+            "q10_rejection_text": "Les métiers trop ",
+            "q9_interest": [
+                "Assurer hygiène et propreté"
+            ]
+        }
+    },
+    {
+        "id": 8,
+        "answers": {
+            "q1_help": "participer a des associations qui aide les ge",
+            "q2_motivation": "Le fait d’avoir un impact",
+            "q3_stress": "J’ai déjà dû réagir rap",
+            "q4_rigueur": "Lors d’une tâche importante, j’ai",
+            "q5_patient_state": " Je reste calme, j’évalue la situat",
+            "q6_qualities": "Empathie, sang-froid, écoute, rigu",
+            "q7_difficulty": "Gérer la détresse émotionnel",
+            "q10_rejection_text": "Les métiers trop",
+            "q9_interest": [
+                "Organiser un service ou des dossiers"
+            ]
+        }
     }
 ]

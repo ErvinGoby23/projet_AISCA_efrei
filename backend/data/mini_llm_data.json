@@ -1,0 +1,143 @@
+{
+  "generic_fallbacks": [
+    "Je peux développer davantage en expliquant la situation plus précisément : ",
+    "Voici une version plus complète de ma réponse : ",
+    "Pour apporter plus de détails : ",
+    "Pour clarifier davantage : "
+  ],
+
+  "q1_templates": [
+    "J'ai aidé une personne en {action}, ce qui lui a permis de {impact}.",
+    "Un jour, j’ai apporté mon soutien en {action}, et cela a été utile car {impact}."
+  ],
+  "q1_actions": [
+    "l’accompagnant dans une situation difficile",
+    "réagissant rapidement face à une urgence",
+    "lui apportant un soutien concret"
+  ],
+  "q1_impact": [
+    "résoudre son problème rapidement",
+    "la rassurer dans un moment compliqué",
+    "améliorer nettement son confort"
+  ],
+
+  "q2_templates": [
+    "Ce qui m’attire dans le fait d’aider, c’est {benefit}, car cela me permet de {emotion}.",
+    "Aider les autres m’inspire car {benefit}, et cela m’apporte {emotion}."
+  ],
+  "q2_benefit": [
+    "le sentiment de contribuer réellement au bien-être des autres",
+    "le fait de pouvoir rendre service de manière concrète",
+    "la possibilité d’avoir un impact positif immédiatement"
+  ],
+  "q2_emotion": [
+    "une vraie satisfaction personnelle",
+    "le sentiment d’être utile",
+    "une motivation supplémentaire"
+  ],
+
+  "q3_templates": [
+    "Dans une situation stressante, j’ai dû {action} afin de {result}.",
+    "J’ai déjà vécu un moment difficile où j’ai {action}, ce qui a permis de {result}."
+  ],
+  "q3_action": [
+    "garder mon sang-froid pour analyser la situation",
+    "prendre une décision rapidement malgré la pression",
+    "gérer plusieurs informations en même temps"
+  ],
+  "q3_result": [
+    "éviter une erreur",
+    "stabiliser la situation",
+    "aider la personne concernée"
+  ],
+
+  "q4_templates": [
+    "J’ai dû faire preuve de rigueur en {task}, en respectant chaque étape pour {goal}.",
+    "Lors d’une mission importante, j’ai appliqué une organisation stricte afin de {goal}."
+  ],
+  "q4_task": [
+    "suivant un protocole précis",
+    "organisant tout le matériel nécessaire",
+    "planifiant les tâches de manière méthodique"
+  ],
+  "q4_goal": [
+    "éviter toute erreur",
+    "assurer un résultat fiable",
+    "garantir la qualité du travail"
+  ],
+
+  "q5_templates": [
+    "Si une personne ne se sent pas bien, je commencerais par {action}, puis je {action2}.",
+    "Face à quelqu’un en difficulté, ma réaction serait de {action}, avant de {action2}."
+  ],
+  "q5_action": [
+    "garder mon calme et observer la situation",
+    "vérifier son état en posant quelques questions simples",
+    "m’assurer qu’elle est en sécurité"
+  ],
+  "q5_action2": [
+    "prévenir un professionnel si nécessaire",
+    "appeler les secours selon la gravité",
+    "l’accompagner jusqu’à ce qu’elle se stabilise"
+  ],
+
+  "q6_templates": [
+    "Les qualités qui me représentent le mieux dans un contexte de soin sont {qualities}, car elles me permettent de {impact}.",
+    "Je pense être quelqu’un de {qualities}, ce qui est essentiel pour {impact}."
+  ],
+  "q6_qualities": [
+    "empathique et patient",
+    "rigoureux et attentif",
+    "calme et à l’écoute"
+  ],
+  "q6_impact": [
+    "m’adapter aux besoins de chacun",
+    "offrir un soutien de qualité",
+    "agir efficacement même sous pression"
+  ],
+
+  "q7_templates": [
+    "La situation qui pourrait me mettre en difficulté est {difficulty}, mais je suis prêt à {effort}.",
+    "Ce qui me challengerait le plus serait {difficulty}, et je travaillerais à {effort}."
+  ],
+  "q7_difficulty": [
+    "faire face à une détresse émotionnelle intense",
+    "annoncer une mauvaise nouvelle",
+    "gérer un conflit dans un service"
+  ],
+  "q7_effort": [
+    "renforcer mes compétences relationnelles",
+    "apprendre à mieux gérer mes émotions",
+    "me former à des techniques de communication adaptées"
+  ],
+
+  "q8_templates": [
+    "Les métiers qui m’attirent le moins sont ceux liés à {aspect}, car je préfère {preference}.",
+    "Je suis moins attiré par les professions où il faut {aspect}, car je me sens plus à l’aise dans {preference}."
+  ],
+  "q8_aspect": [
+    "des tâches très administratives",
+    "un travail sans contact humain",
+    "une activité trop répétitive"
+  ],
+  "q8_preference": [
+    "l’action et l’interaction avec les personnes",
+    "un environnement dynamique",
+    "des situations variées"
+  ],
+
+  "q9_templates": [
+    "L’activité dans le domaine de la santé qui m’attire le plus est {activity}, car cela me permet de {reason}.",
+    "Je suis particulièrement intéressé par {activity}, notamment parce que {reason}."
+  ],
+  "q9_activity": [
+    "l’accompagnement des patients",
+    "les soins de premier niveau",
+    "les tâches en lien avec l’hygiène et la sécurité"
+  ],
+  "q9_reason": [
+    "j’aime aider les autres directement",
+    "c’est une mission concrète et utile",
+    "cela correspond à mes qualités humaines"
+  ]
+}

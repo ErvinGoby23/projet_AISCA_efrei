@@ -33,15 +33,34 @@ def compute_similarity(text_list):
     user_emb = model.encode(text_list, convert_to_tensor=True)
     block_scores = {}
 
+    print("\n--- 🔍 Détail des cosinus par micro-compétence ---")
+
     for block_id, comp_ids in blocks.items():
         sims = []
 
-        for cid in comp_ids:
-            comp_emb = competency_embeddings[cid]
-            score = util.cos_sim(user_emb, comp_emb)
-            sims.append(float(score.max()))
+        print(f"\n📦 Bloc {block_id} :")
 
+        for cid in comp_ids:
+            comp_text = next(c["text"] for c in competencies if c["id"] == cid)
+            comp_emb = competency_embeddings[cid]
+
+            # Matrice cosinus (len(user_text_list) x 1)
+            score_matrix = util.cos_sim(user_emb, comp_emb)
+
+            # Max pour ce bloc (ta logique actuelle)
+            max_cos = float(score_matrix.max())
+            sims.append(max_cos)
+
+            # 🔥 Nouveau : afficher chaque cosinus
+            print(f"  • {cid} : {comp_text}")
+            for idx, txt in enumerate(text_list):
+                print(f"      - phrase {idx+1} → cos = {score_matrix[idx].item():.4f}")
+
+            print(f"      → max = {max_cos:.4f}")
+
+        # Moyenne du bloc
         block_scores[block_id] = float(np.mean(sims))
+        print(f"🎯 Score bloc {block_id} = {block_scores[block_id]:.4f}")
 
     return block_scores
 
