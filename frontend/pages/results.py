@@ -12,7 +12,6 @@ load_css()
 
 API = "http://127.0.0.1:8000/api/analyze/"
 
-
 if "answers" not in st.session_state:
     st.error("Veuillez remplir le questionnaire d'abord.")
     st.stop()
