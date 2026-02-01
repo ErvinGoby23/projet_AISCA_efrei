@@ -103,17 +103,11 @@ def analyze_full(data: dict):
     progression = result["progression_plan"]
 
     # Résumé automatique
-    bio = (
-        f"L'utilisateur présente un score global de {round(global_score, 3)}. "
-        f"Scores par blocs : " +
-        ", ".join([f"{b}: {round(s,3)}" for b, s in block_scores.items()]) +
-        "."
-    )
-
     return {
-        "block_scores": block_scores,
-        "global_score": global_score,
-        "top3": top3,
-        "progression": progression,
-        "bio": bio
+        "block_scores": result["block_scores"],
+        "global_score": result["global_score"],
+        "top3": result["top3_jobs"],
+        "progression": result["progression_plan"],
+        "bio": result["bio"]
     }
+

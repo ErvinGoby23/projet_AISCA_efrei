@@ -1,119 +1,3 @@
-# ====================================
-# 📦 IMPORTS
-# ====================================
-# import streamlit as st
-# import requests
-# import numpy as np
-# import matplotlib.pyplot as plt
-
-# def load_css():
-#     with open("assets/style.css") as f:
-#         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-# load_css()
-
-
-# API = "http://127.0.0.1:8000/api/analyze/"
-
-# -----------------------------------
-# Vérifier que les réponses existent
-# -----------------------------------
-# if "answers" not in st.session_state:
-#     st.error("Veuillez remplir le questionnaire d'abord.")
-#     st.stop()
-
-# answers = st.session_state["answers"]
-
-# st.title("📊 Résultats AISCA – Analyse de Compétences Santé")
-# st.write("Voici votre profil analysé grâce à SBERT et à l'IA générative.")
-
-
-# -----------------------------------
-# 👉 Appel à FastAPI
-# -----------------------------------
-# with st.spinner("Analyse en cours..."):
-#     res = requests.post(API, json=answers).json()
-
-# block_scores = res["block_scores"]
-# global_score = res["global_score"]
-# top3 = res["top3"]
-# progression = res["progression"]
-# bio = res["bio"]
-
-
-# -----------------------------------
-# 👉 Score Global
-# -----------------------------------
-# st.subheader("🎯 Score Global AISCA")
-
-# color = (
-#     "green" if global_score >= 0.6
-#     else "orange" if global_score >= 0.4
-#     else "red"
-# )
-
-# st.markdown(
-#     f"<h2 style='color:{color}; font-size:40px;'>{round(global_score*100,1)}%</h2>",
-#     unsafe_allow_html=True
-# )
-
-
-# -----------------------------------
-# 👉 Radar Chart
-# -----------------------------------
-# st.subheader("🧭 Radar des Blocs de Compétences")
-
-# labels = list(block_scores.keys())
-# values = list(block_scores.values())
-
-# angles = np.linspace(0, 2 * np.pi, len(labels), endpoint=False).tolist()
-# values += values[:1]
-# angles += angles[:1]
-
-# fig, ax = plt.subplots(figsize=(6,6), subplot_kw=dict(polar=True))
-# ax.plot(angles, values, linewidth=2, color="blue")
-# ax.fill(angles, values, alpha=0.25, color="skyblue")
-# ax.set_xticks(angles[:-1])
-# ax.set_xticklabels(labels, fontsize=12)
-
-# st.pyplot(fig)
-
-
-
-# -----------------------------------
-# 👉 TOP 3 METIERS
-# -----------------------------------
-# st.subheader("🏥 Top 3 Métiers Recommandés")
-
-# for job in top3:
-#     st.markdown(f"### {job['title']} – **{round(job['score']*100,1)}%**")
-#     st.write(job["description"])
-#     st.write("---")
-
-
-
-# -----------------------------------
-# 👉 Plan de progression
-# -----------------------------------
-# st.subheader("📘 Plan de progression personnalisé")
-# st.write(progression)
-
-
-
-# -----------------------------------
-# 👉 Résumé automatique
-# -----------------------------------
-# st.subheader("🧬 Résumé automatique (BIO)")
-# st.info(bio)
-
-
-
-# -----------------------------------
-# 👉 Retour au questionnaire
-# -----------------------------------
-# if st.button("↩️ Refaire le questionnaire"):
-#     del st.session_state["answers"]
-#     st.switch_page("app.py")
 import streamlit as st
 import requests
 import numpy as np
@@ -139,145 +23,139 @@ if "answers" not in st.session_state:
 
 answers = st.session_state["answers"]
 
-# -----------------------------------
-# TITRE PRINCIPAL
-# -----------------------------------
+# =========================
+# TITRE
+# =========================
 st.markdown("""
-<h1 style="text-align:center; color:#2A8BF2;">
-📊 Analyse AISCA – Compétences Santé
-</h1>
+<h1>📊 Analyse AISCA – Compétences Santé</h1>
 <p style="text-align:center; font-size:18px;">
-Votre profil a été analysé grâce au modèle SBERT et à l’IA générative.
+Votre profil a été analysé grâce au modèle <b>SBERT</b> et à l’IA générative.
 </p>
 """, unsafe_allow_html=True)
 
-# -----------------------------------
-# Appel à FastAPI
-# -----------------------------------
+# =========================
+# APPEL API
+# =========================
 with st.spinner("⏳ Analyse en cours..."):
     res = requests.post(API, json=answers).json()
 
-block_scores = res["block_scores"]
-global_score = res["global_score"]
-top3 = res["top3"]
-progression = res["progression"]
-bio = res["bio"]
+block_scores = res.get("block_scores", {})
+global_score = res.get("global_score", 0)
+top3 = res.get("top3", [])
+progression = res.get("progression", "")
+bio_raw = res.get("bio", "")
 
-# -----------------------------------
+# =========================
 # SCORE GLOBAL
-# -----------------------------------
+# =========================
 st.subheader("🎯 Score Global AISCA")
 
-color = (
-    "green" if global_score >= 0.6
-    else "orange" if global_score >= 0.4
-    else "red"
+score_color = (
+    "#22c55e" if global_score >= 0.6
+    else "#f59e0b" if global_score >= 0.4
+    else "#ef4444"
 )
 
 st.markdown(
-    f"<h2 style='color:{color}; font-size:50px; text-align:center;'>{round(global_score*100,1)}%</h2>",
+    f"<div class='card'><div class='score' style='color:{score_color}'>"
+    f"{round(global_score * 100, 1)}%</div></div>",
     unsafe_allow_html=True
 )
 
+st.caption(
+    "💡 Un score supérieur à 50 % indique une compatibilité modérée à bonne "
+    "avec les métiers du soin."
+)
 
-# ============================================================
-# 📊 NOUVEAU : Bar Chart des Scores par Bloc
-# ============================================================
-st.subheader("📌 Scores par Bloc de Compétences (Bar Chart)")
+# =========================
+# GRAPHIQUES CÔTE À CÔTE
+# =========================
+st.subheader("📊 Analyse des compétences")
 
-fig, ax = plt.subplots(figsize=(7,4))
-labels = list(block_scores.keys())
-values = list(block_scores.values())
+if block_scores:
+    labels = list(block_scores.keys())
+    values = list(block_scores.values())
 
-ax.bar(labels, values, color="cornflowerblue", edgecolor="black")
-ax.set_ylabel("Score", fontsize=12)
-ax.set_title("Scores par Bloc", fontsize=14)
-ax.set_ylim(0, 1)
+    col1, col2 = st.columns(2)
 
-for i, v in enumerate(values):
-    ax.text(i, v + 0.02, f"{round(v*100)}%", ha="center", fontsize=12)
+    # --- BAR CHART ---
+    with col1:
+        st.markdown("### 📌 Scores par bloc")
+        fig, ax = plt.subplots(figsize=(5, 4))
+        ax.bar(labels, values, color="#3b82f6")
+        ax.set_ylim(0, 1)
+        ax.tick_params(axis="x", rotation=30)
+        for i, v in enumerate(values):
+            ax.text(i, v + 0.03, f"{round(v * 100)}%", ha="center")
+        st.pyplot(fig)
 
-st.pyplot(fig)
-st.markdown('</div>', unsafe_allow_html=True)
+    # --- RADAR ---
+    with col2:
+        st.markdown("### 🧭 Radar des compétences")
+        angles = np.linspace(0, 2 * np.pi, len(labels), endpoint=False).tolist()
+        values_radar = values + values[:1]
+        angles += angles[:1]
 
+        fig2, ax2 = plt.subplots(figsize=(5, 5), subplot_kw=dict(polar=True))
+        ax2.plot(angles, values_radar, color="#60a5fa", linewidth=2)
+        ax2.fill(angles, values_radar, color="#3b82f6", alpha=0.3)
+        ax2.set_xticks(angles[:-1])
+        ax2.set_xticklabels(labels, fontsize=10)
+        st.pyplot(fig2)
 
-# ============================================================
-# 🧭 Radar Chart
-# ============================================================
-st.subheader("🧭 Radar des Blocs de Compétences")
+else:
+    st.info("Graphiques non disponibles.")
 
-angles = np.linspace(0, 2 * np.pi, len(labels), endpoint=False).tolist()
-values_radar = values + values[:1]
-angles += angles[:1]
-
-fig2, ax2 = plt.subplots(figsize=(6,6), subplot_kw=dict(polar=True))
-ax2.plot(angles, values_radar, linewidth=2, color="blue")
-ax2.fill(angles, values_radar, alpha=0.25, color="skyblue")
-ax2.set_xticks(angles[:-1])
-ax2.set_xticklabels(labels, fontsize=12)
-
-st.pyplot(fig2)
-
-
-
-# ============================================================
-# 🏥 TOP 3 MÉTIERS
-# ============================================================
+# =========================
+# TOP 3 MÉTIERS (BLEU)
+# =========================
 st.subheader("🏥 Top 3 Métiers Recommandés")
 
-for job in top3:
-    st.markdown(f"""
-    <div style='padding:15px; border-radius:10px; background:#F4F9FF; margin-bottom:10px;'>
-        <h3 style='margin:0;'>{job['title']} — <span style='color:#2A8BF2;'>{round(job['score']*100,1)}%</span></h3>
-        <p>{job['description']}</p>
-    </div>
-    """, unsafe_allow_html=True)
+cols = st.columns(3)
+
+for i, job in enumerate(top3):
+    with cols[i]:
+        st.markdown(f"""
+        <div class="job">
+            <h3>{job['title']}</h3>
+            <span>{round(job['score'] * 100, 1)}%</span>
+            <p>{job['description']}</p>
+        </div>
+        """, unsafe_allow_html=True)
 
 # =========================
 # PLAN DE PROGRESSION
 # =========================
-st.markdown(
-    f"""
-    <div class="card">
-        <h3>📘 Plan de progression personnalisé</h3>
-        <p>{progression}</p>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-
-# =========================
-# RÉSUMÉ AUTOMATIQUE
-# =========================
-st.markdown(
-    f"""
-    <div class="card">
-        <h3>🧬 Résumé automatique</h3>
-        <p>{bio}</p>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-
-# ============================================================
-# 📘 Plan de progression IA
-# ============================================================
 st.subheader("📘 Plan de progression personnalisé")
-st.info(progression)
 
+st.markdown(f"""
+<div class="card">
+    <p>{progression}</p>
+</div>
+""", unsafe_allow_html=True)
 
+# =========================
+# RÉSUMÉ IA
+# =========================
+st.subheader("🧬 Résumé automatique")
 
-# ============================================================
-# 🧬 Résumé automatique
-# ============================================================
-st.subheader("🧬 Résumé automatique (BIO)")
-st.success(bio)
+if bio_raw:
+    st.markdown(f"""
+    <div class="card">
+        <p>{bio_raw}</p>
+    </div>
+    """, unsafe_allow_html=True)
+else:
+    st.info("Résumé non disponible.")
 
+# =========================
+# FOOTER
+# =========================
+st.caption(
+    "⚠️ Cette analyse est une aide à l’orientation et ne remplace pas "
+    "un entretien avec un professionnel."
+)
 
-
-# ============================================================
-# Retour bouton
-# ============================================================
 st.markdown("<br>", unsafe_allow_html=True)
 
 if st.button("↩️ Refaire le questionnaire"):

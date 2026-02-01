@@ -64,21 +64,31 @@ Top 3 métiers :
 
 Scores détaillés métiers :
 {job_scores}
-
 ======================
 INSTRUCTIONS POUR L'IA
 ======================
 À partir de ces informations :
 
-1) Rédige un résumé du profil.
-2) Identifie les forces du candidat.
-3) Identifie les points à améliorer.
-4) Génère un plan d'action structuré :
+BIO :
+Rédige un résumé clair et synthétique du profil (5 à 6 lignes max),
+sans chiffres bruts, orienté utilisateur.
+
+PLAN :
+1) Identifie les forces du candidat.
+2) Identifie les points à améliorer.
+3) Génère un plan d'action structuré :
    - Court terme (3 actions)
    - Moyen terme (3 actions)
-5) Explique pourquoi les métiers recommandés correspondent au profil.
+4) Explique pourquoi les métiers recommandés correspondent au profil.
 
-Réponds de manière structurée.
+Format STRICT :
+
+[BIO]
+Texte ici
+
+[PLAN]
+Texte ici
+
 """
     return context
 
@@ -133,13 +143,19 @@ def analyze_responses(user_text_list):
         messages=[{"role": "user", "content": context}]
     )
 
-    progression_plan = response.choices[0].message.content
+    full_text = response.choices[0].message.content
+
+# Découpage propre
+    bio = full_text.split("[PLAN]")[0].replace("[BIO]", "").strip()
+    progression_plan = full_text.split("[PLAN]")[1].strip()
+
 
     # --- 6) Retour final ---
     return {
         "block_scores": block_scores,
         "global_score": round(global_score, 4),
-        "job_scores": job_scores,
         "top3_jobs": top3_jobs,
-        "progression_plan": progression_plan
+        "progression_plan": progression_plan,
+        "bio": bio
     }
+

@@ -98,5 +98,232 @@
                 "Organiser un service ou des dossiers"
             ]
         }
+    },
+    {
+        "id": 7,
+        "answers": {
+            "q1_help": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée.",
+            "q2_motivation": "Le fait d’avoir un impact positif et d’apporter un réel soutien à quelqu’un.",
+            "q3_stress": "J’ai déjà dû réagir rapidement dans une situation d’urgence et garder mon sang-froid pour prendre les bonnes décisions.",
+            "q4_rigueur": "Lors d’une tâche importante, j’ai suivi chaque étape avec précision pour éviter toute erreur.",
+            "q5_patient_state": "Je reste calme, j’évalue la situation, je sécurise la personne et j’appelle les secours si nécessaire.",
+            "q6_qualities": "Empathie, sang-froid, écoute, rigueur, sens des responsabilités.",
+            "q7_difficulty": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q10_rejection_text": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q9_interest": [
+                "Assurer hygiène et propreté",
+                "Soutenir moralement et communiquer"
+            ]
+        }
+    },
+    {
+        "id": 8,
+        "answers": {
+            "q1_help": "e",
+            "q2_motivation": "e",
+            "q3_stress": "e",
+            "q4_rigueur": "e",
+            "q5_patient_state": "e",
+            "q6_qualities": "ee",
+            "q7_difficulty": "e",
+            "q10_rejection_text": "e",
+            "q9_interest": [
+                "Organiser un service ou des dossiers"
+            ]
+        }
+    },
+    {
+        "id": 9,
+        "answers": {
+            "q1_help": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée",
+            "q2_motivation": "Le fait d’avoir un impact positif et d’apporter un réel soutien à quelqu’un.",
+            "q3_stress": "J’ai déjà dû réagir rapidement dans une situation d’urgence et garder mon sang-froid pour prendre les bonnes décisions.",
+            "q4_rigueur": "Lors d’une tâche importante, j’ai suivi chaque étape avec précision pour éviter toute erreur.",
+            "q5_patient_state": "Je reste calme, j’évalue la situation, je sécurise la personne et j’appelle les secours si nécessaire.",
+            "q6_qualities": "Empathie, sang-froid, écoute, rigueur, sens des responsabilités.",
+            "q7_difficulty": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q10_rejection_text": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q9_interest": [
+                "Soutenir moralement et communiquer",
+                "Observer et surveiller un patient",
+                "Assurer hygiène et propreté"
+            ]
+        }
+    },
+    {
+        "id": 10,
+        "answers": {
+            "q1_help": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée",
+            "q2_motivation": "Le fait d’avoir un impact positif et d’apporter un réel soutien à quelqu’un.",
+            "q3_stress": "J’ai déjà dû réagir rapidement dans une situation d’urgence et garder mon sang-froid pour prendre les bonnes décisions.",
+            "q4_rigueur": "Lors d’une tâche importante, j’ai suivi chaque étape avec précision pour éviter toute erreur.",
+            "q5_patient_state": "Je reste calme, j’évalue la situation, je sécurise la personne et j’appelle les secours si nécessaire.",
+            "q6_qualities": "Empathie, sang-froid, écoute, rigueur, sens des responsabilités.",
+            "q7_difficulty": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q10_rejection_text": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q9_interest": [
+                "Assurer hygiène et propreté"
+            ]
+        }
+    },
+    {
+        "id": 11,
+        "answers": {
+            "q1_help": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivé",
+            "q2_motivation": "Le fait d’avoir un impact positif et d’apporter un réel soutien à quelqu’un.",
+            "q3_stress": "J’ai déjà dû réagir rapidement dans une situation d’urgence et garder mon sang-froid pour prendre les bonnes décisions.",
+            "q4_rigueur": "Lors d’une tâche importante, j’ai suivi chaque étape avec précision pour éviter toute erreur.",
+            "q5_patient_state": "Je reste calme, j’évalue la situation, je sécurise la personne et j’appelle les secours si nécessaire.",
+            "q6_qualities": "Empathie, sang-froid, écoute, rigueur, sens des responsabilités.",
+            "q7_difficulty": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q10_rejection_text": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q9_interest": [
+                "Assister dans des soins"
+            ]
+        }
+    },
+    {
+        "id": 12,
+        "answers": {
+            "q1_help": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q2_motivation": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q3_stress": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q4_rigueur": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q5_patient_state": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q6_qualities": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q7_difficulty": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q10_rejection_text": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q9_interest": [
+                "Organiser un service ou des dossiers"
+            ]
+        }
+    },
+    {
+        "id": 13,
+        "answers": {
+            "q1_help": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q2_motivation": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q3_stress": "Les métiers trop administratifs, car je préfère le contact humain et l’action.Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q4_rigueur": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q5_patient_state": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q6_qualities": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q7_difficulty": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q10_rejection_text": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q9_interest": [
+                "Organiser un service ou des dossiers"
+            ]
+        }
+    },
+    {
+        "id": 14,
+        "answers": {
+            "q1_help": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q2_motivation": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q3_stress": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q4_rigueur": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q5_patient_state": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q6_qualities": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q7_difficulty": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q10_rejection_text": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q9_interest": [
+                "Organiser un service ou des dossiers"
+            ]
+        }
+    },
+    {
+        "id": 15,
+        "answers": {
+            "q1_help": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q2_motivation": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q3_stress": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q4_rigueur": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q5_patient_state": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q6_qualities": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q7_difficulty": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q10_rejection_text": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q9_interest": [
+                "Soutenir moralement et communiquer"
+            ]
+        }
+    },
+    {
+        "id": 16,
+        "answers": {
+            "q1_help": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée",
+            "q2_motivation": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée",
+            "q3_stress": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée",
+            "q4_rigueur": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée",
+            "q5_patient_state": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée",
+            "q6_qualities": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivéeJ’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée",
+            "q7_difficulty": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée",
+            "q10_rejection_text": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée",
+            "q9_interest": [
+                "Assurer hygiène et propreté"
+            ]
+        }
+    },
+    {
+        "id": 17,
+        "answers": {
+            "q1_help": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée",
+            "q2_motivation": "Le fait d’avoir un impact positif et d’apporter un réel soutien à quelqu’un.",
+            "q3_stress": "J’ai déjà dû réagir rapidement dans une situation d’urgence et garder mon sang-froid pour prendre les bonnes décisions.",
+            "q4_rigueur": "Lors d’une tâche importante, j’ai suivi chaque étape avec précision pour éviter toute erreur.",
+            "q5_patient_state": "Je reste calme, j’évalue la situation, je sécurise la personne et j’appelle les secours si nécessaire.",
+            "q6_qualities": "Empathie, sang-froid, écoute, rigueur, sens des responsabilités.",
+            "q7_difficulty": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q10_rejection_text": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q9_interest": [
+                "Assurer hygiène et propreté"
+            ]
+        }
+    },
+    {
+        "id": 18,
+        "answers": {
+            "q1_help": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q2_motivation": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q3_stress": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q4_rigueur": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q5_patient_state": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q6_qualities": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q7_difficulty": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q10_rejection_text": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q9_interest": [
+                "Je ne sais pas"
+            ]
+        }
+    },
+    {
+        "id": 19,
+        "answers": {
+            "q1_help": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q2_motivation": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q3_stress": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q4_rigueur": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q5_patient_state": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q6_qualities": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q7_difficulty": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q10_rejection_text": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q9_interest": [
+                "Assurer hygiène et propreté"
+            ]
+        }
+    },
+    {
+        "id": 20,
+        "answers": {
+            "q1_help": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée.",
+            "q2_motivation": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée.J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée.",
+            "q3_stress": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée.",
+            "q4_rigueur": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée.",
+            "q5_patient_state": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée.",
+            "q6_qualities": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée.",
+            "q7_difficulty": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée.",
+            "q10_rejection_text": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée.",
+            "q9_interest": [
+                "Organiser un service ou des dossiers"
+            ]
+        }
     }
 ]
