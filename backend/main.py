@@ -2,7 +2,6 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import json, os
 
-# Import SBERT engine
 from sbert.analyzer import analyze_responses
 from sbert.recommender import recommend_jobs
 
@@ -19,9 +18,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 RESPONSES_PATH = os.path.join(BASE_DIR, "models", "responses.json")
 
 
-# -------------------------
-# LECTURE JSON SÉCURISÉE
-# -------------------------
+
 def load_responses():
     if not os.path.exists(RESPONSES_PATH):
         return []
@@ -36,9 +33,7 @@ def load_responses():
         return []
 
 
-# -------------------------
-# ROUTE 1 : SAUVEGARDE DES RÉPONSES
-# -------------------------
+
 @app.post("/save-responses/")
 def save_responses(data: dict):
 
@@ -58,9 +53,7 @@ def save_responses(data: dict):
     return {"message": "saved", "id": new_id}
 
 
-# -------------------------
-# ROUTE 2 : ANALYSE SBERT BRUTE
-# -------------------------
+
 @app.post("/analyze/")
 def analyze(data: dict):
     """
@@ -70,18 +63,14 @@ def analyze(data: dict):
     return analyze_responses(text_list)
 
 
-# -------------------------
-# ROUTE 3 : RECOMMANDATION MÉTIERS
-# -------------------------
+
 @app.post("/recommend/")
 def recommend(data: dict):
     text_list = list(data.values())
     return recommend_jobs(text_list)
 
 
-# -------------------------
-# 🔥 ROUTE 4 : ANALYSE COMPLÈTE AISCA (ÉTAPE 7)
-# -------------------------
+
 @app.post("/api/analyze/")
 def analyze_full(data: dict):
     """

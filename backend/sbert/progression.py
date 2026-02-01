@@ -1,14 +1,12 @@
 from mistralai import Mistral
 import os
 
-# Charge la clé API depuis la variable d’environnement
 API_KEY = os.getenv("MISTRAL_API_KEY")
 
 client = Mistral(api_key=API_KEY)
 
 
 def generate_progression(block_scores, top3_jobs):
-    # Trouver les 2 blocs les plus faibles
     weakest = sorted(block_scores.items(), key=lambda x: x[1])[:2]
 
     weakest_blocks = [

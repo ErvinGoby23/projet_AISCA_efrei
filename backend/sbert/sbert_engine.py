@@ -2,17 +2,14 @@ import json, os
 import numpy as np
 from sentence_transformers import SentenceTransformer, util
 
-# Charger modèle SBERT
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR,"..","data")
 
-# Charger compétences
 with open(os.path.join(DATA_DIR, "competencies.json"), "r", encoding="utf-8") as f:
     competencies = json.load(f)
 
-# Charger métiers
 with open(os.path.join(DATA_DIR, "jobs.json"), "r", encoding="utf-8") as f:
     jobs = json.load(f)
 
@@ -22,13 +19,11 @@ competency_embeddings = {
     for c in competencies
 }
 
-# Index par bloc
 blocks = {}
 for c in competencies:
     blocks.setdefault(c["block_id"], []).append(c["id"])
 
 
-# ----- SIMILARITÉ SBERT -----
 def compute_similarity(text_list):
     user_emb = model.encode(text_list, convert_to_tensor=True)
     block_scores = {}
@@ -46,12 +41,10 @@ def compute_similarity(text_list):
     return block_scores
 
 
-# ----- SCORE GLOBAL -----
 def compute_global_score(block_scores):
     return float(np.mean(list(block_scores.values())))
 
 
-# ----- SCORE MÉTIERS -----
 def compute_job_scores(block_scores):
     job_scores = {}
 

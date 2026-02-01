@@ -1,6 +1,5 @@
-/* =========================
-   FOND GLOBAL
-========================= */
+
+
 .stApp {
     background: linear-gradient(
         180deg,
@@ -13,17 +12,13 @@
     background-color: transparent;
 }
 
-/* =========================
-   TYPO
-========================= */
+
 body {
     color: #e5e7eb;
     font-family: "Inter", "Segoe UI", system-ui, sans-serif;
 }
 
-/* =========================
-   TITRES
-========================= */
+
 h1 {
     color: #60a5fa;
     text-align: center;
@@ -38,9 +33,6 @@ h3 {
     color: #bfdbfe;
 }
 
-/* =========================
-   CARDS GÉNÉRIQUES
-========================= */
 .card {
     background: linear-gradient(
         145deg,
@@ -54,9 +46,7 @@ h3 {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
-/* =========================
-   SCORE GLOBAL
-========================= */
+
 .score {
     font-size: 64px;
     font-weight: 900;
@@ -64,9 +54,7 @@ h3 {
     letter-spacing: 1px;
 }
 
-/* =========================
-   JOBS – TOP 3
-========================= */
+
 .job {
     background: linear-gradient(
         145deg,
@@ -89,17 +77,12 @@ h3 {
     font-weight: 700;
 }
 
-/* =========================
-   TEXTE
-========================= */
+
 p {
     color: #cbd5f5;
     line-height: 1.7;
 }
 
-/* =========================
-   BOUTONS
-========================= */
 button {
     background: linear-gradient(
         135deg,
@@ -117,17 +100,11 @@ button:hover {
     filter: brightness(1.15);
 }
 
-/* =========================
-   ALERTES
-========================= */
 .stAlert {
     background-color: #020617;
     border-left: 4px solid #3b82f6;
 }
 
-/* =========================
-   GRAPHIQUES
-========================= */
 canvas {
     background: transparent !important;
 }

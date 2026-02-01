@@ -13,22 +13,16 @@ def analyze_responses(user_text_list):
     Pipeline complet AISCA
     """
 
-    # 1️⃣ Analyse sémantique (SBERT)
     block_scores = compute_similarity(user_text_list)
 
-    # 2️⃣ Score global
     global_score = compute_global_score(block_scores)
 
-    # 3️⃣ Scores métiers
     job_scores = compute_job_scores(block_scores)
 
-    # 4️⃣ Top 3 métiers
     top3_jobs = recommend_jobs(job_scores)
 
-    # 5️⃣ Plan de progression IA
     progression_plan = generate_progression(block_scores, top3_jobs)
 
-    # 6️⃣ BIO automatique IA
     bio = generate_bio(user_text_list, block_scores, top3_jobs)
 
     return {
