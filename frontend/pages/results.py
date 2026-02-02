@@ -83,13 +83,10 @@ if block_scores:
     target_values = [TARGET_PROFILE[int(b)] for b in labels]
     gaps = [target_values[i] - values[i] for i in range(len(values))]
 
-    FIG_SIZE = (5, 4)  # 🔒 taille identique
+    FIG_SIZE = (5, 4) 
 
     col1, col2 = st.columns(2)
 
-    # =========================
-    # COLONNE 1 — Écart profil métier
-    # =========================
     with col1:
         st.markdown("### Écart au profil métier ")
 
@@ -117,9 +114,6 @@ if block_scores:
         fig1.tight_layout()
         st.pyplot(fig1)
 
-    # =========================
-    # COLONNE 2 — Priorités de progression
-    # =========================
     with col2:
         st.markdown("### Priorités de progression")
 

@@ -9,9 +9,6 @@ from .bio_generator import generate_bio
 
 
 def analyze_responses(user_text_list):
-    """
-    Pipeline complet AISCA
-    """
 
     block_scores = compute_similarity(user_text_list)
 

@@ -91,7 +91,6 @@ def analyze_full(data: dict):
     top3 = result["top3_jobs"]
     progression = result["progression_plan"]
 
-    # Résumé automatique
     return {
         "block_scores": result["block_scores"],
         "global_score": result["global_score"],
