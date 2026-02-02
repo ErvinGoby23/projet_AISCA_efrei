@@ -86,11 +86,6 @@ def analyze_full(data: dict):
 
     result = analyze_responses(user_text_list)
 
-    block_scores = result["block_scores"]
-    global_score = result["global_score"]
-    top3 = result["top3_jobs"]
-    progression = result["progression_plan"]
-
     return {
         "block_scores": result["block_scores"],
         "global_score": result["global_score"],

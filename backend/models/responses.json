@@ -341,5 +341,37 @@
                 "Soutenir moralement et communiquer"
             ]
         }
+    },
+    {
+        "id": 22,
+        "answers": {
+            "q1_help": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée.",
+            "q2_motivation": "Le fait d’avoir un impact positif et d’apporter un réel soutien à quelqu’un.",
+            "q3_stress": "J’ai déjà dû réagir rapidement dans une situation d’urgence et garder mon sang-froid pour prendre les bonnes décisions.",
+            "q4_rigueur": "Lors d’une tâche importante, j’ai suivi chaque étape avec précision pour éviter toute erreur.",
+            "q5_patient_state": "Je reste calme, j’évalue la situation, je sécurise la personne et j’appelle les secours si nécessaire.",
+            "q6_qualities": "Empathie, sang-froid, écoute, rigueur, sens des responsabilités.",
+            "q7_difficulty": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q10_rejection_text": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q9_interest": [
+                "Soutenir moralement et communiquer"
+            ]
+        }
+    },
+    {
+        "id": 23,
+        "answers": {
+            "q1_help": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée.",
+            "q2_motivation": "Le fait d’avoir un impact positif et d’apporter un réel soutien à quelqu’un.",
+            "q3_stress": "J’ai déjà dû réagir rapidement dans une situation d’urgence et garder mon sang-froid pour prendre les bonnes décisions.",
+            "q4_rigueur": "Lors d’une tâche importante, j’ai suivi chaque étape avec précision pour éviter toute erreur.",
+            "q5_patient_state": "Je reste calme, j’évalue la situation, je sécurise la personne et j’appelle les secours si nécessaire.",
+            "q6_qualities": "Empathie, sang-froid, écoute, rigueur, sens des responsabilités.",
+            "q7_difficulty": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q10_rejection_text": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q9_interest": [
+                "Soutenir moralement et communiquer"
+            ]
+        }
     }
 ]
