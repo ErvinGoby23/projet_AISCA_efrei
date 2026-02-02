@@ -12,22 +12,22 @@ API = "http://127.0.0.1:8000"
 
 st.set_page_config(page_title="AISCA – Questionnaire", page_icon="🩺")
 
-st.title("🩺 AISCA – Questionnaire de Compétences Santé")
+st.title(" AISCA – Questionnaire de Compétences Santé")
 st.write("Veuillez répondre aux questions suivantes de manière honnête et détaillée.")
 
 
-q1 = st.text_area("1️⃣ Décrivez une situation où vous avez aidé quelqu’un.")
-q2 = st.text_area("2️⃣ Qu’est-ce qui vous attire dans le fait d’aider ou accompagner une personne ?")
-q3 = st.text_area("3️⃣ Racontez un moment où vous avez dû gérer une situation stressante.")
-q4 = st.text_area("4️⃣ Décrivez une situation où vous avez dû être très rigoureux(se) ou organisé(e).")
-q5 = st.text_area("5️⃣ Comment réagiriez-vous si une personne ne se sent pas bien ?")
-q6 = st.text_area("6️⃣ Quelles qualités vous représentent le mieux dans un contexte de soin ?")
-q7 = st.text_area("7️⃣ Quelles tâches ou situations vous mettraient le plus en difficulté dans un métier de la santé ?")
-q10 = st.text_area("8️⃣ Quels types de métiers vous attirent le moins, et pourquoi ?")
+q1 = st.text_area("1️. Décrivez une situation où vous avez aidé quelqu’un.")
+q2 = st.text_area("2️. Qu’est-ce qui vous attire dans le fait d’aider ou accompagner une personne ?")
+q3 = st.text_area("3️. Racontez un moment où vous avez dû gérer une situation stressante.")
+q4 = st.text_area("4️. Décrivez une situation où vous avez dû être très rigoureux(se) ou organisé(e).")
+q5 = st.text_area("5️. Comment réagiriez-vous si une personne ne se sent pas bien ?")
+q6 = st.text_area("6️. Quelles qualités vous représentent le mieux dans un contexte de soin ?")
+q7 = st.text_area("7️. Quelles tâches ou situations vous mettraient le plus en difficulté dans un métier de la santé ?")
+q10 = st.text_area("8️. Quels types de métiers vous attirent le moins, et pourquoi ?")
 
 
 q9 = st.multiselect(
-    "9️⃣ Quelle activité dans le domaine de la santé vous attire le plus ?",
+    "9️. Quelle activité dans le domaine de la santé vous attire le plus ?",
     [
         "Assister dans des soins",
         "Observer et surveiller un patient",

@@ -1,4 +1,4 @@
-from backend.sbert.sbert_engine import compute_similarity, compute_global_score, compute_job_scores
+from backend.ai_pipeline.sbert_engine import compute_similarity, compute_global_score, compute_job_scores
 
 user_texts = [
     "J'ai aidé un patient en difficulté émotionnelle.",

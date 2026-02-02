@@ -2,8 +2,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import json, os
 
-from sbert.analyzer import analyze_responses
-from sbert.recommender import recommend_jobs
+from ai_pipeline.analyzer import analyze_responses
+from ai_pipeline.recommender import recommend_jobs
 
 app = FastAPI()
 

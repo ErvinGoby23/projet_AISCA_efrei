@@ -28,7 +28,7 @@ Votre profil a été analysé grâce au modèle <b>SBERT</b> et à l’IA géné
 """, unsafe_allow_html=True)
 
 
-with st.spinner(" Analyse en cours..."):
+with st.spinner("Analyse en cours..."):
     res = requests.post(API, json=answers).json()
 
 block_scores = res.get("block_scores", {})
@@ -53,9 +53,10 @@ st.markdown(
 )
 
 st.caption(
-    "💡 Un score supérieur à 50 % indique une compatibilité modérée à bonne "
+    "Un score supérieur à 50 % indique une compatibilité modérée à bonne "
     "avec les métiers du soin."
 )
+
 
 st.subheader("Analyse des compétences")
 
@@ -63,36 +64,88 @@ if block_scores:
     labels = list(block_scores.keys())
     values = list(block_scores.values())
 
+    BLOCK_NAMES = {
+        1: "Gestes & Techniques de Soin",
+        2: "Relation, Communication & Soutien",
+        3: "Organisation & Gestion des Soins",
+        4: "Observation Clinique & Analyse",
+        5: "Hygiène, Sécurité & Prévention"
+    }
+
+    TARGET_PROFILE = {
+        1: 0.65,
+        2: 0.70,
+        3: 0.65,
+        4: 0.65,
+        5: 0.60
+    }
+
+    target_values = [TARGET_PROFILE[int(b)] for b in labels]
+    gaps = [target_values[i] - values[i] for i in range(len(values))]
+
+    FIG_SIZE = (5, 4)  # 🔒 taille identique
+
     col1, col2 = st.columns(2)
 
+    # =========================
+    # COLONNE 1 — Écart profil métier
+    # =========================
     with col1:
-        st.markdown("### 📌 Scores par bloc")
-        fig, ax = plt.subplots(figsize=(5, 4))
-        ax.bar(labels, values, color="#3b82f6")
-        ax.set_ylim(0, 1)
-        ax.tick_params(axis="x", rotation=30)
+        st.markdown("### Écart au profil métier ")
+
+        x = np.arange(len(labels))
+        width = 0.35
+
+        fig1, ax1 = plt.subplots(figsize=FIG_SIZE)
+        ax1.bar(x - width/2, values, width, label="Votre profil", color="#3b82f6")
+        ax1.bar(x + width/2, target_values, width, label="Profil attendu", color="#9ca3af")
+
+        ax1.set_xticks(x)
+        ax1.set_xticklabels(
+            [BLOCK_NAMES[int(b)] for b in labels],
+            rotation=25
+        )
+        ax1.set_ylim(0, 1)
+        ax1.legend()
+
         for i, v in enumerate(values):
-            ax.text(i, v + 0.03, f"{round(v * 100)}%", ha="center")
-        st.pyplot(fig)
+            ax1.text(i - width/2, v + 0.02, f"{round(v*100)}%", ha="center", fontsize=9)
 
+        for i, v in enumerate(target_values):
+            ax1.text(i + width/2, v + 0.02, f"{round(v*100)}%", ha="center", fontsize=9)
+
+        fig1.tight_layout()
+        st.pyplot(fig1)
+
+    # =========================
+    # COLONNE 2 — Priorités de progression
+    # =========================
     with col2:
-        st.markdown("### 🧭 Radar des compétences")
-        angles = np.linspace(0, 2 * np.pi, len(labels), endpoint=False).tolist()
-        values_radar = values + values[:1]
-        angles += angles[:1]
+        st.markdown("### Priorités de progression")
 
-        fig2, ax2 = plt.subplots(figsize=(5, 5), subplot_kw=dict(polar=True))
-        ax2.plot(angles, values_radar, color="#60a5fa", linewidth=2)
-        ax2.fill(angles, values_radar, color="#3b82f6", alpha=0.3)
-        ax2.set_xticks(angles[:-1])
-        ax2.set_xticklabels(labels, fontsize=10)
+        fig2, ax2 = plt.subplots(figsize=FIG_SIZE)
+        ax2.bar(
+            [BLOCK_NAMES[int(b)] for b in labels],
+            gaps,
+            color="#ef4444"
+        )
+
+        ax2.set_ylabel("Écart à combler")
+        ax2.set_ylim(0, max(gaps) + 0.05)
+
+        for i, v in enumerate(gaps):
+            ax2.text(i, v + 0.01, f"{round(v*100,1)}%", ha="center", fontsize=9)
+
+        plt.xticks(rotation=25)
+
+        fig2.tight_layout()
         st.pyplot(fig2)
 
 else:
     st.info("Graphiques non disponibles.")
 
 
-st.subheader("🏥 Top 3 Métiers Recommandés")
+st.subheader("Top 3 Métiers Recommandés")
 
 cols = st.columns(3)
 
@@ -107,7 +160,7 @@ for i, job in enumerate(top3):
         """, unsafe_allow_html=True)
 
 
-st.subheader("📘 Plan de progression personnalisé")
+st.subheader("Plan de progression personnalisé")
 
 st.markdown(f"""
 <div class="card">
@@ -128,12 +181,12 @@ else:
     st.info("Résumé non disponible.")
 
 st.caption(
-    "⚠️ Cette analyse est une aide à l’orientation et ne remplace pas "
+    "Cette analyse est une aide à l’orientation et ne remplace pas "
     "un entretien avec un professionnel."
 )
 
 st.markdown("<br>", unsafe_allow_html=True)
 
-if st.button("↩️ Refaire le questionnaire"):
+if st.button("Refaire le questionnaire"):
     del st.session_state["answers"]
     st.switch_page("app.py")
