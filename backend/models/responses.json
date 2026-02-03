@@ -373,5 +373,102 @@
                 "Soutenir moralement et communiquer"
             ]
         }
+    },
+    {
+        "id": 24,
+        "answers": {
+            "q1_help": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée.",
+            "q2_motivation": "Le fait d’avoir un impact positif et d’apporter un réel soutien à quelqu’un.",
+            "q3_stress": "J’ai déjà dû réagir rapidement dans une situation d’urgence et garder mon sang-froid pour prendre les bonnes décisions.",
+            "q4_rigueur": "Lors d’une tâche importante, j’ai suivi chaque étape avec précision pour éviter toute erreur.",
+            "q5_patient_state": "Je reste calme, j’évalue la situation, je sécurise la personne et j’appelle les secours si nécessaire.",
+            "q6_qualities": "Empathie, sang-froid, écoute, rigueur, sens des responsabilités.",
+            "q7_difficulty": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q10_rejection_text": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q9_interest": [
+                "Soutenir moralement et communiquer"
+            ]
+        }
+    },
+    {
+        "id": 25,
+        "answers": {
+            "q1_help": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée.",
+            "q2_motivation": "Le fait d’avoir un impact positif et d’apporter un réel soutien à quelqu’un.",
+            "q3_stress": "J’ai déjà dû réagir rapidement dans une situation d’urgence et garder mon sang-froid pour prendre les bonnes décisions.",
+            "q4_rigueur": "Lors d’une tâche importante, j’ai suivi chaque étape avec précision pour éviter toute erreur.",
+            "q5_patient_state": "Je reste calme, j’évalue la situation, je sécurise la personne et j’appelle les secours si nécessaire.",
+            "q6_qualities": "Empathie, sang-froid, écoute, rigueur, sens des responsabilités.",
+            "q7_difficulty": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q10_rejection_text": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q9_interest": [
+                "Soutenir moralement et communiquer"
+            ]
+        }
+    },
+    {
+        "id": 26,
+        "answers": {
+            "q1_help": "J’ai accompagné régulièrement une personne âgée dans son quotidien, en l’aidant pour ses déplacements, ses rendez-vous médicaux et en lui tenant compagnie.",
+            "q2_motivation": "Le sentiment d’être utile sur le long terme et de contribuer au bien-être quotidien des autres.",
+            "q3_stress": "Face à une situation stressante, je prends le temps d’analyser calmement, de demander conseil si besoin et d’agir progressivement.",
+            "q4_rigueur": "J’organise mes tâches à l’avance et je respecte les consignes données pour assurer un suivi fiable et constant.",
+            "q5_patient_state": "Je privilégie l’écoute, je rassure la personne, j’observe son comportement et je signale tout changement préoccupant.",
+            "q6_qualities": "Patience, sens de l’observation, écoute, bienveillance, fiabilité.",
+            "q7_difficulty": "La répétition de certaines tâches peut être difficile, mais je comprends son importance pour la sécurité et le confort des patients.",
+            "q10_rejection_text": "Les métiers trop orientés vers l’urgence permanente, car je préfère un accompagnement dans la durée.",
+            "q9_interest": [
+                "Observer et surveiller un patient",
+                "Soutenir moralement et communiquer"
+            ]
+        }
+    },
+    {
+        "id": 27,
+        "answers": {
+            "q1_help": "J’ai contribué au bon fonctionnement d’un espace de travail en appliquant strictement des protocoles, sans interaction directe avec le public.",
+            "q2_motivation": "Ce qui m’intéresse est la fiabilité des processus et le respect des normes plutôt que la relation humaine.",
+            "q3_stress": "En cas de pression, je me concentre sur les consignes écrites et j’exécute les étapes prévues sans improvisation.",
+            "q4_rigueur": "J’ai travaillé dans un contexte où la moindre erreur pouvait invalider une procédure complète, ce qui exigeait une grande précision.",
+            "q5_patient_state": "e signale la situation selon la procédure établie sans intervenir directement",
+            "q6_qualities": "Méthode, précision, respect strict des règles, constance.",
+            "q7_difficulty": "Les échanges émotionnels et la communication informelle.",
+            "q10_rejection_text": "Les métiers basés sur l’accompagnement humain ou l’improvisation.",
+            "q9_interest": [
+                "Assurer hygiène et propreté"
+            ]
+        }
+    },
+    {
+        "id": 28,
+        "answers": {
+            "q1_help": "J’ai aidé une personne en crise cardiaque en appelant les secours et en réalisant un massage cardiaque jusqu’à leur arrivée.",
+            "q2_motivation": "Le fait d’avoir un impact positif et d’apporter un réel soutien à quelqu’un.",
+            "q3_stress": "J’ai déjà dû réagir rapidement dans une situation d’urgence et garder mon sang-froid pour prendre les bonnes décisions.",
+            "q4_rigueur": "Lors d’une tâche importante, j’ai suivi chaque étape avec précision pour éviter toute erreur.",
+            "q5_patient_state": "Je reste calme, j’évalue la situation, je sécurise la personne et j’appelle les secours si nécessaire.",
+            "q6_qualities": "Empathie, sang-froid, écoute, rigueur, sens des responsabilités.",
+            "q7_difficulty": "Gérer la détresse émotionnelle ou annoncer une mauvaise nouvelle, mais je suis prêt à apprendre.",
+            "q10_rejection_text": "Les métiers trop administratifs, car je préfère le contact humain et l’action.",
+            "q9_interest": [
+                "Soutenir moralement et communiquer"
+            ]
+        }
+    },
+    {
+        "id": 29,
+        "answers": {
+            "q1_help": "J’ai contribué au bon fonctionnement d’un espace de travail en appliquant strictement des protocoles, sans interaction directe avec le public.",
+            "q2_motivation": "Ce qui m’intéresse est la fiabilité des processus et le respect des normes plutôt que la relation humaine.",
+            "q3_stress": "En cas de pression, je me concentre sur les consignes écrites et j’exécute les étapes prévues sans improvisation.",
+            "q4_rigueur": "J’ai travaillé dans un contexte où la moindre erreur pouvait invalider une procédure complète, ce qui exigeait une grande précision.",
+            "q5_patient_state": "Je signale la situation selon la procédure établie sans intervenir directement.",
+            "q6_qualities": "Méthode, précision, respect strict des règles, constance.",
+            "q7_difficulty": "Les échanges émotionnels et la communication informelle.",
+            "q10_rejection_text": "Les métiers basés sur l’accompagnement humain ou l’improvisation.",
+            "q9_interest": [
+                "Assurer hygiène et propreté"
+            ]
+        }
     }
 ]
