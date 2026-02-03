@@ -13,7 +13,7 @@ Elle analyse des réponses en langage naturel à l’aide de modèles NLP (SBERT
 
 ---
 
-## 🧠 Fonctionnalités principales
+##  Fonctionnalités principales
 
 - Analyse sémantique des réponses utilisateur (SBERT)
 - Scoring par blocs de compétences
